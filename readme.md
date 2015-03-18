@@ -1,6 +1,3 @@
-## node-http-ping
-####A simple node module for pinging a web server
-
 ### installation
     npm install node-http-ping
 
