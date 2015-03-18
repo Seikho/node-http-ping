@@ -1,0 +1,24 @@
+{
+  "name": "node-http-ping",
+  "version": "0.1.0",
+  "description": "A simple module for pinging websites",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gihub.com/seikho/node-http-ping"
+  },
+  "keywords": [
+    "node",
+    "http",
+    "ping",
+    "heartbeat"
+  ],
+  "author": "Carl Winkler",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.9.14"
+  }
+}
