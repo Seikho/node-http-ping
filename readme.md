@@ -1,12 +1,17 @@
-### installation
-    npm install node-http-ping
+# node-http-ping
+A simple, light-weight JavaScript module for pinging HTTP services 
 
-### usage
+### Installation
+```
+npm install node-http-ping --save
+```
+### Usage
 
-    var ping = require("node-http-ping");
+```javascript
+const ping = require('node-http-ping');
 
-    ping("google.com")
-      .then(function(time) {
-        console.log("Response time: %dms", time);
-      });
+ping('google.com', 80 /* optional */)
+    .then(time => console.log(`Response time: ${time}ms`))
+    .catch(error => console.log(`Failed to ping: ${error}`));
+```
 
