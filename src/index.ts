@@ -9,7 +9,7 @@ export = ping;
  * @returns Promise<{responseTime: number }> A promise that returns the round trip time in milliseconds. Returns -1 if an error occurred.
  * */
 function ping(url: string, port?: number) {
-	var promise = new Promise(resolve => {
+	var promise = new Promise((resolve, reject) => {
 		var result: any;
 		var options = { host: url, port: port || 80, path: '/' };
 		var start = Date.now();
@@ -21,7 +21,7 @@ function ping(url: string, port?: number) {
 
 		pingRequest.on("error", () => {
 			result = -1;
-			resolve(result);
+			reject(result);
 			pingRequest.abort();
 		});
 		pingRequest.write("");
