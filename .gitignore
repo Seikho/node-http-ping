@@ -5,3 +5,5 @@ NUL
 tsd.json
 *.map
 .tscache/
+typings/browser
+typings/browser.d.ts
