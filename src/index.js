@@ -1,7 +1,7 @@
 var http = require("http");
 var Promise = require("bluebird");
 function ping(url, port) {
-    var promise = new Promise(function (resolve) {
+    var promise = new Promise(function (resolve, reject) {
         var result;
         var options = { host: url, port: port || 80, path: '/' };
         var start = Date.now();
@@ -12,7 +12,7 @@ function ping(url, port) {
         });
         pingRequest.on("error", function () {
             result = -1;
-            resolve(result);
+            reject(result);
             pingRequest.abort();
         });
         pingRequest.write("");
