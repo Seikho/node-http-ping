@@ -7,3 +7,4 @@ tsd.json
 .tscache/
 typings/browser
 typings/browser.d.ts
+typings/main.d.ts
