@@ -1,5 +1,3 @@
-/// <reference path="typings/tsd.d.ts" />
-
 import http = require("http");
 import Promise = require("bluebird");
 export = ping;

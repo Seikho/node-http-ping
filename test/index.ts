@@ -1,5 +1,3 @@
-/// <reference path="../src/typings/tsd.d.ts" />
-
 import chai = require("chai");
 import ping = require("../src/index");
 var expect = chai.expect;
