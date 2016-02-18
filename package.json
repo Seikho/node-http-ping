@@ -4,7 +4,8 @@
   "description": "A simple module for pinging websites",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,7 @@
   },
   "devDependencies": {
     "chai": "^2.1.2",
-    "grunt": "^0.4.5",
-    "grunt-ts": "^3.0.0",
-    "mocha": "^2.2.1"
+    "mocha": "^2.2.1",
+    "typescript": "^1.8.0"
   }
 }
