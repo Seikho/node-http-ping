@@ -1,12 +1,14 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "sourceMap": false
-    },
-    "exclude": [
-        "node_modules",
-        "typings/browser",
-        "typings/browser.d.ts"
-    ]
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": false,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "declaration": true,
+    "declarationDir": "types",
+    "lib": ["es2015", "es2016", "es2017"]
+  },
+  "exclude": ["types"]
 }

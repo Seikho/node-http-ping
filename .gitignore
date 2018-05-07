@@ -2,10 +2,8 @@
 *.*~
 node_modules/
 NUL
-tsd.json
+*.js
 *.map
-.tscache/
-typings/browser
-typings/browser.d.ts
-typings/main.d.ts
 *.log
+types/
+*.tgz
