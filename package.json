@@ -1,6 +1,6 @@
 {
   "name": "node-http-ping",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A simple module for pinging websites",
   "main": "src/index.js",
   "scripts": {

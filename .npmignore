@@ -2,7 +2,8 @@
 *.map
 .vscode/
 test/
-!types/src/index.d.ts
 tsconfig.json
 *.tgz
 *.log
+!types/src/index.d.ts
+!src/index.js
