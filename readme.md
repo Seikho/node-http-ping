@@ -15,14 +15,13 @@ import ping from 'node-http-ping'
 // or
 const ping = require('node-http-ping')
 
-
 // Using http by default
 ping('google.com', 80 /* optional */)
   .then(time => console.log(`Response time: ${time}ms`))
   .catch(() => console.log(`Failed to ping google.com`))
 
 // Or use https
-ping('https://google.com)
-    .then(time => console.log(`Response time: ${time}ms`))
-    .catch(() => console.log('Failed to ping google.com'))
+ping('https://google.com')
+  .then(time => console.log(`Response time: ${time}ms`))
+  .catch(() => console.log('Failed to ping google.com'))
 ```
